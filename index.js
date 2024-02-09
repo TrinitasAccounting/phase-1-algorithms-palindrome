@@ -1,18 +1,44 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+
+  const arrayLength = word.length;
+
+  if (arrayLength <= 1) {
+    return true;
+  }
+  else {
+    for (let i = 0; i <= arrayLength / 2 - 1; i++) {
+      if (word[i] === word[arrayLength - 1 - i]) {
+      } else {
+        return false;
+      }
+      return true;
+    }
+  }
 }
 
-/* 
-  Add your pseudocode here
+
+
+
+
+
+/*
+Add your pseudocode here
 */
 
 /*
-  Add written explanation of your solution here
+Add written explanation of your solution here
 */
 
 // You can run `node index.js` to view these console logs
+
 if (require.main === module) {
   // add your own custom tests in here
+  // console.log(word[i]);
+  // console.log(word[arrayLength - i]);
+
+
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
